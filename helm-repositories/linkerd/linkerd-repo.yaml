@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
   name: helm.linkerd.io
-  namespace: ${releaseNamespace}
+  namespace: kommander-workspace
 spec:
   interval: 10m
   timeout: 1m
@@ -13,7 +13,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
   name: helm.linkerd-smi.io
-  namespace: ${releaseNamespace}
+  namespace: kommander-workspace
 spec:
   interval: 10m
   timeout: 1m
